@@ -1,6 +1,7 @@
 from human import Human
 from player import Player
 from ai import Ai
+import random
 
 class Game:
 
@@ -22,5 +23,7 @@ class Game:
         pass
 
     def game_round(self):
-        while self.player1.wins < 2 and self.player2.wins < 2:
-            self.player1
+        if Ai(Player).list_of_chosen_gestures == Human.list_of_chosen_gestures:
+            result = 'Draw!'
+        elif(Human.choose_gesture, Ai.choose_gesture) in self.win_lose_pairs:
+
