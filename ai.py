@@ -5,4 +5,4 @@ class Ai(Player):
         super().__init__(name)
         
     def choose_gesture(self):
-        self.list_of_gestures = 
+        self.list_of_gestures = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']
