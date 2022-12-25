@@ -1,6 +1,6 @@
 class Player:
 
-    def __init__(self, name, win_lose_pairs):
+    def __init__(self, name, win_lose_pairs,result):
         self.list_of_gestures = ['Rock','Paper','Scissors','Lizard','Spock']
         self.chosen_gesture = ""
         self.wins = 0
@@ -9,6 +9,7 @@ class Player:
 
     def list_index(self): 
         self.list_index = 0,1,2,3,4
+        self.chosen_gesture = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]
         pass
 
     print('Please choose one of the options below:')
