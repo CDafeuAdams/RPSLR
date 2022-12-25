@@ -22,8 +22,16 @@ class Game:
         print(f"\nRock crushes Scissors \nRock crushes Scissors \n Scissors cuts Paper \n Paper covers Rock \n Rock crushes Lizard \n Lizard poisons Spock \n Spock smashes Scissors \n Scissors decapitates Lizard \n Lizard eats Paper \n Paper disproves Spock \n Spock vaporizes Rock")
         pass
 
+
     def game_round(self):
         if Ai(Player).list_of_chosen_gestures == Human.list_of_chosen_gestures:
             result = 'Draw!'
         elif(Human.choose_gesture, Ai.choose_gesture) in self.win_lose_pairs:
+            result = 'You Won!'
+        else:
+            result = 'You Lose!'
+
+    print(Human.chosen_gestures)
+    print('Ai:', Human)
+    print('Result:', result)
 
