@@ -6,6 +6,7 @@ class Player:
         self.wins = 0
         self.name = name
         self.win_lose_pairs = [('Scissors', 'Paper'), ('Paper', 'Rock'), ('Rock','Lizard'), ('Lizard', 'Spock'), ('Spock', 'Scissors'), ('Lizard', 'Paper'), ('Paper','Spock'),('Spock', 'Rock'),('Rock', 'Scissors')]
+        self.result = result
 
     def list_index(self): 
         self.list_index = 0,1,2,3,4

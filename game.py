@@ -35,9 +35,9 @@ class Game:
         else:
             result = 'You Lose!'
 
-    print('> Player chose:', Player.chosen_gesture)
-    print('> Ai chose:', Ai.choose_gesture)
-    print('> Result:', run_game)
+    print(Player.list_of_gestures)
+    print(Ai.list_of_gestures)
+    print(run_game)
 
     play_again = input('Play again? (Y/N):')
     if play_again.lower() == 'n':
