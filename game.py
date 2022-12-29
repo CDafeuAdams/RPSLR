@@ -34,14 +34,17 @@ class Game:
             result = 'You Won!'
         else:
             result = 'You Lose!'
-
-    print(Player.list_of_gestures)
-    print(Ai.list_of_gestures)
-    print(run_game)
+    
+    def current_turn(self):
+        self.player1.list_of_gestures[0].win_lose_pairs(self.player2.list_of_gestures)
 
     play_again = input('Play again? (Y/N):')
     if play_again.lower() == 'n':
         pass
+
+    print(Player.list_of_gestures)
+    print(Ai.list_of_gestures)
+    print(run_game)
 
 random()
 
